@@ -1,0 +1,38 @@
+/* Estilo del contenedor */
+.notas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9; 
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo del título */
+.notas h1 {
+  font-size: 40px;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+/* Estilo del área de texto */
+.notas textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 8px; 
+  background-color: #fff;
+  color: #333; 
+}
+
+/* Estilo del mensaje de guardado */
+.notas p {
+  font-size: 1rem;
+  color: #4caf50; 
+  margin-top: 20px;
+}

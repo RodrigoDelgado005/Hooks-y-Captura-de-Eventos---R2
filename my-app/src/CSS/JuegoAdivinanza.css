@@ -1,0 +1,76 @@
+/* Contenedor principal del juego */
+.juego-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo del contenedor del juego */
+.juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+}
+
+/* Estilo del título */
+.juego h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Estilo del formulario */
+.juego form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo del campo de entrada */
+.juego input{
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilo del botón */
+.juego button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  max-width: 150px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo del mensaje */
+.juego p {
+  font-size: 1.2rem;
+  color: #d9534f;
+  margin-top: 20px;
+}
