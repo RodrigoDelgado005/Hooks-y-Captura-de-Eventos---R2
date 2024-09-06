@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../src/CSS/AplicacionNotas.css';
 
 const AplicacionNotas = () => {
-    // Este estado manejar el contenido de la nota y el estado de guardado
+    // Estados para manejar el contenido de la nota, el estado de guardado y la última nota guardada
     const [nota, setNota] = useState('');
     const [guardando, setGuardando] = useState(false);
+    const [ultimaNotaGuardada, setUltimaNotaGuardada] = useState('');
 
     // Esto hace que despues de un tiempo de inactividad, se guarde automaticamente la nota
     useEffect(() => {
@@ -13,6 +14,7 @@ const AplicacionNotas = () => {
             if(nota){
                 console.log('Nota guardada', nota);
                 setGuardando(true);
+                setUltimaNotaGuardada(nota); // Guarda la nota
             }
         }, 10000);
 
@@ -27,6 +29,12 @@ const AplicacionNotas = () => {
             <h1>Bloc de Notas</h1>
             <textarea value={nota} onChange={(e) => setNota(e.target.value)} placeholder='Escribe una Nota...'></textarea>
             {guardando && <p>Guardando Nota...</p>}
+            {ultimaNotaGuardada && (
+                <div className='nota-guardada'>
+                    <h2>Última Nota Guardada:</h2>
+                    <p>{ultimaNotaGuardada}</p>
+                </div>
+            )}
         </div>
     )
 }

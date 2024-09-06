@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 150px; 
   background-color: #f3f3f3;
   padding: 20px;
 }
@@ -18,12 +18,12 @@
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo del título */
 .container h1 {
-  font-size: 2rem;
+  font-size: 30px;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
@@ -36,7 +36,7 @@
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 /* Estilo de los mensajes de error */

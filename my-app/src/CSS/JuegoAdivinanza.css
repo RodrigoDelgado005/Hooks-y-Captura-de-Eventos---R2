@@ -29,7 +29,7 @@
 
 /* Estilo del título */
 .juego h1 {
-  font-size: 1.8rem;
+  font-size: 25px;
   color: #333;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -65,7 +65,6 @@
   font-size: 15px;
   width: 100%;
   max-width: 150px;
-  transition: background-color 0.3s ease;
 }
 
 /* Estilo del mensaje */
